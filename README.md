@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # jingdong
 
 ## Project setup
@@ -17,3 +18,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vue-project
+Vue项目学习
+>>>>>>> b3bf006b09d57f2fa46b3ee1eecebbb561243692
