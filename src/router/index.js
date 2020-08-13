@@ -29,7 +29,34 @@ const routes = [
   {
     path: '/botnav',
     name: 'botnav',
-    component: () => import('../views/BottomNav.vue')
+    component: () => import('../views/BottomNav.vue'),
+    children:[
+      {
+        path: 'list',
+        name: 'list',
+        component: () => import('../views/List.vue')
+      },
+      {
+        path: 'mine',
+        name: 'mine',
+        component: () => import('../views/Mine.vue')
+      },
+      {
+        path: 'search',
+        name: 'search',
+        component: () => import('../views/Search.vue')
+      },
+      {
+        path: 'cart',
+        name: 'cart',
+        component: () => import('../views/Cart.vue')
+      },
+      {
+        path: 'index',
+        name: 'index',
+        component: () => import('../views/Index.vue')
+      }
+    ]
   },
 ]
 

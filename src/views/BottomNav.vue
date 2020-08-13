@@ -14,7 +14,7 @@
 export default {
   data() {
     return {
-      selectedLabelDefault: "Vip",
+      selectedLabelDefault: "首页",
       tabs: [
         {
           label: "首页",
@@ -46,6 +46,23 @@ export default {
     },
     changeHandler(label) {
       // if you clicked different tab, this methods can be emitted
+      switch (label) {
+        case "首页":
+          this.$router.push({ path: "/botnav/index" });
+          break;
+        case "分类":
+          this.$router.push({ path: "/botnav/list" });
+          break;
+        case "购物车":
+          this.$router.push({ path: "/botnav/cart" });
+          break;
+        case "个人中心":
+          this.$router.push({ path: "/botnav/mine" });
+          break;
+        case "搜索":
+          this.$router.push({ path: "/botnav/search" });
+          break;
+      }
     },
   },
 };
