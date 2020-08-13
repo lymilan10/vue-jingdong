@@ -5,6 +5,9 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import 'amfe-flexible'
+import setAxios from './setaxios'
+
+setAxios()
 
 Vue.config.productionTip = false
 

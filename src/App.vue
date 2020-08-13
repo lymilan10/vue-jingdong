@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">登陆</router-link>|
-      <router-link to="/register">注册</router-link>
+      <!-- <router-link to="/login">登陆</router-link>|
+      <router-link to="/register">注册</router-link> -->
     </div>
-    <router-view />
+    <router-view/>
   </div>
 </template>
 

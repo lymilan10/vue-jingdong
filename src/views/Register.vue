@@ -1,5 +1,6 @@
 <template>
   <div>
+    <img class="headerimg" src="https://bkimg.cdn.bcebos.com/pic/6d81800a19d8bc3ef3656f908d8ba61ea8d3457e?x-bce-process=image/resize,m_lfit,w_268,limit_1/format,f_jpg" alt="">
     <cube-form :model="model" :schema="schema" @submit="submitHandler"></cube-form>
   </div>
 </template>
@@ -71,7 +72,8 @@ export default {
       this.$http
         .get("/api/register", { params: this.model })
         .then((res) => {
-          console.log(res.data.success);
+          console.log(res.data);
+          console.log(res.success);
         })
         .catch((err) => {
           console.log(err);
@@ -80,4 +82,10 @@ export default {
   },
 };
 </script>
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.headerimg
+    height 150px
+    width 70%
+
+
+</style>
