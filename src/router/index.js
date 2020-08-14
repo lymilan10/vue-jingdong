@@ -32,16 +32,27 @@ const routes = [
     component: () => import('../views/BottomNav.vue'),
     children:[
       {
+<<<<<<< HEAD
         path: 'index',
         name: 'index',
         component: () => import('../views/Index.vue')
       },
       {
+=======
+>>>>>>> 5edcd7a0f9cb38563e4e4bb19e4db7c2c5393d7c
         path: 'list',
         name: 'list',
         component: () => import('../views/List.vue')
       },
       {
+<<<<<<< HEAD
+=======
+        path: 'mine',
+        name: 'mine',
+        component: () => import('../views/Mine.vue')
+      },
+      {
+>>>>>>> 5edcd7a0f9cb38563e4e4bb19e4db7c2c5393d7c
         path: 'search',
         name: 'search',
         component: () => import('../views/Search.vue')
@@ -49,6 +60,7 @@ const routes = [
       {
         path: 'cart',
         name: 'cart',
+<<<<<<< HEAD
         meta: { 
           requireAuth:true //需要浏览权限
          },
@@ -62,6 +74,15 @@ const routes = [
          },
         component: () => import('../views/Mine.vue')
       },
+=======
+        component: () => import('../views/Cart.vue')
+      },
+      {
+        path: 'index',
+        name: 'index',
+        component: () => import('../views/Index.vue')
+      }
+>>>>>>> 5edcd7a0f9cb38563e4e4bb19e4db7c2c5393d7c
     ]
   },
 ]

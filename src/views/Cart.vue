@@ -40,6 +40,10 @@ export default {
         //减少商品
         addCart(index){
 
+        },
+        //清空购物车
+        clearCart(index){
+
         }
     }
 }
