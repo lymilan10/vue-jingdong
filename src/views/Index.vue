@@ -1,5 +1,5 @@
 <template>
-  <div class="index">
+  <div id="index">
     <!-- 轮播图 -->
     <cube-slide ref="slide" :data="items" @change="changePage">
       <cube-slide-item
@@ -13,7 +13,7 @@
       </cube-slide-item>
     </cube-slide>
     <!-- 滚动分类 -->
-    <cube-slide ref="slidelists" :data="lists" @change="changePage">
+    <cube-slide ref="slidelists" :data="lists" :auto-play="false">
       <cube-slide-item v-for="(list, index) in lists" :key="index">
         <ul class="listul">
           <li class="listli" v-for="(item,index1) in list" :key="index1">
