@@ -33,17 +33,15 @@ export default {
 
         //增加商品
         removeCart(index){
-            this.cartArr
-
-
+            this.$store.commit('removeCart', index)
         },
         //减少商品
         addCart(index){
-
+            this.$store.commit('addCart', index)
         },
         //清空购物车
-        clearCart(index){
-
+        clearCart(){
+            this.$store.commit('clearCart')
         }
     }
 }
